@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="osil005" id="0" name="AntonymTests" package="folksonomy" tests="1" time="0.0040" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.AntonymTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="1" name="CategoryControllerTests" package="folksonomy" tests="1" time="0.072" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.CategoryControllerTests" name="testSomething" time="0.069" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="2" name="SynonymTests" package="folksonomy" tests="1" time="0.0050" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.SynonymTests" name="testSomething" time="0.0020" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="3" name="TaggingServiceTests" package="folksonomy" tests="1" time="0.0060" timestamp="2011-09-26T02:45:14">
+      <properties />
+
+      <testcase classname="folksonomy.TaggingServiceTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="4" name="TagsTests" package="folksonomy" tests="1" time="0.0070" timestamp="2011-09-26T02:45:14">
+      <properties />
+
+      <testcase classname="folksonomy.TagsTests" name="testCreateTag" time="0.0050" />
+
+      <system-out><![CDATA[--Output from testCreateTag--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreateTag--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="5" name="ThesaurusServiceTests" package="folksonomy" tests="1" time="0.277" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.ThesaurusServiceTests" name="testSomething" time="0.245" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="6" name="TimedKindTests" package="folksonomy" tests="1" time="0.0050" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.TimedKindTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="7" name="TimedTagTests" package="folksonomy" tests="1" time="0.0060" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.TimedTagTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="8" name="UriControllerTests" package="folksonomy" tests="1" time="0.477" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.UriControllerTests" name="testSomething" time="0.474" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="9" name="UriTests" package="folksonomy" tests="1" time="0.0050" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.UriTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="10" name="UserTagControllerTests" package="folksonomy" tests="1" time="0.05" timestamp="2011-09-26T02:45:14">
+      <properties />
+
+      <testcase classname="folksonomy.UserTagControllerTests" name="testSomething" time="0.047" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="11" name="UserTagTests" package="folksonomy" tests="1" time="0.0050" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.UserTagTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="12" name="VoteControllerTests" package="folksonomy" tests="1" time="0.078" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.VoteControllerTests" name="testSomething" time="0.075" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osil005" id="13" name="VoteTests" package="folksonomy" tests="1" time="0.0070" timestamp="2011-09-26T02:45:13">
+      <properties />
+
+      <testcase classname="folksonomy.VoteTests" name="testSomething" time="0.0050" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
