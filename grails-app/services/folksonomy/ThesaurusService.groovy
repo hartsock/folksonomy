@@ -25,7 +25,7 @@ class ThesaurusService implements InitializingBean {
     def remoteCall = { word -> "${remoteServiceUri}/${apiKey}/${word}/xml"?.toURL()?.text }
 
     def wordList(word,Closure remoteLogic) {
-        return parseResponse( remoteLogic.call(word) )
+        return parseResponse( remoteLogic.call(word.toString().replaceAll(/\s/,"%20")) )
     }
 
     def parseResponse(String response) {

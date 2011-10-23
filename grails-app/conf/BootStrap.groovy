@@ -1,10 +1,20 @@
 import folksonomy.Tag
+import folksonomy.Authority
+import folksonomy.User
+import grails.plugins.springsecurity.SpringSecurityService
+import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
 class BootStrap {
-
+    SpringSecurityService springSecurityService
     def init = { servletContext ->
-        if(Tag.count()) {
+        // fix bug in spring security ui: no securityConfig
+        SpringSecurityUtils.securityConfig =  ConfigurationHolder.config.grails.plugins.springsecurity
+        if(Tag.count() == 0) {
             new Tag(name:'java').save()
+        }
+        if(Authority.count() == 0) {
+            // springSecurityService
         }
     }
     def destroy = {

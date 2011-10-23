@@ -9,9 +9,11 @@ class SemanticService {
 
     void scan() {
         def tag = Tag.findByChecked(false)
-        categorize(tag)
-        tag.setChecked(true)
-        if(!tag.save()) { throw new IllegalStateException("${tag.errors}") }
+        if(tag) {
+            categorize(tag)
+            tag.setChecked(true)
+            if(!tag.save()) { throw new IllegalStateException("${tag.errors}") }
+        }
     }
 
     void categorize(Tag tag) {

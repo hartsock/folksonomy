@@ -4,9 +4,14 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/web-app" relative="/" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/views" relative="/" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -14,80 +19,139 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/grails-app/controllers" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/hibernate-1.3.6">
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/hibernate-1.3.6/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/hibernate-1.3.6/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/hibernate-1.3.6/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/grails-app/controllers" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/realms" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/domain" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/services" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/grails-app/taglib" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3/grails-app/taglib" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/profiler-0.3/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/grails-app/services" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/grails-app/taglib" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/mail-1.0-SNAPSHOT/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/src/groovy" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/grails-app/services" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-openid-1.0.3/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/domain" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/src/groovy" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/tomcat-2.0.0.M1">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/tomcat-2.0.0.M1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/tomcat-2.0.0.M1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/tomcat-2.0.0.M1/web-app/plugins" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="grails-1.3.6" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.0.0.M1" level="application" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (folksonomy-grailsPlugins)">
         <CLASSES>
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/lib" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/lib" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/lib" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/lib" />
-          <root url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/lib" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/lib" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/lib" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/lib" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/lib" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/javax.mail/mail/jars/mail-1.4.3.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.mail/mail/jars/mail-1.4.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.icegreen/greenmail/jars/greenmail-1.3.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-web/jars/spring-security-web-3.0.5.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.0.5.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-server-SampleServer/jars/openid4java-server-SampleServer-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-consumer-SampleConsumer/jars/openid4java-consumer-SampleConsumer-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-server-JdbcServerAssociationStore/jars/openid4java-server-JdbcServerAssociationStore-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-server/jars/openid4java-server-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-consumer/jars/openid4java-consumer-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java/jars/openid4java-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/spring-security-openid/jars/spring-security-openid-3.0.5.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.openid4java/openid4java-nodeps/jars/openid4java-nodeps-0.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.9.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.nekohtml/nekohtml/jars/nekohtml-1.9.14.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.tmatesoft.svnkit/svnkit/jars/svnkit-1.3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/dumbster/dumbster/jars/dumbster-1.6.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.ccil.cowan.tagsoup/tagsoup/jars/tagsoup-1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/greenmail-1.2.2/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/nimble-0.4-SNAPSHOT/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/quartz-0.4.2/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/shiro-1.0.1/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.6/projects/folksonomy/plugins/tomcat-1.3.6/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

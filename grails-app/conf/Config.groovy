@@ -1,5 +1,15 @@
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
+grails.config.locations = []
+[
+        "${userHome}/system.properties",
+        "/etc/folksonomy/system.properties"
+]. each { fileName ->
+    if(new File(fileName).isFile()) {
+        grails.config.locations << "file:" + fileName
+    }
+}
+
 
 // grails.config.locations = [ "classpath:${appName}-config.properties",
 //                             "classpath:${appName}-config.groovy",
@@ -48,8 +58,8 @@ grails.logging.jul.usebridge = true
 // packages to include in Spring bean scanning
 grails.spring.bean.packages = []
 
-thesaurusService.remoteServiceUri="http://words.bighugelabs.com/api/2/"
-thesaurusService.apiKey="35f535bbe72fb2f7a3efb0ca81d0c1bf"
+thesaurusService.remoteServiceUri="${System.getProperty('thesaurusService.remoteServiceUri')}"
+thesaurusService.apiKey="${System.getProperty('thesaurusService.apiKey')}"
 
 // set per-environment serverURL stem for creating absolute links
 environments {
@@ -88,3 +98,15 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+
+//userLookup.userDomainClassName='folksonomy.User'
+//userLookup.authorityJoinClassName='folksonomy.UserAuthority'
+// Added by the Spring Security Core plugin:
+userLookup.userDomainClassName='foksonomy.User'
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'folksonomy.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'folksonomy.UserAuthority'
+grails.plugins.springsecurity.authority.className = 'folksonomy.Authority'
+grails.plugins.springsecurity.rememberMe.persistent = true
+grails.plugins.springsecurity.rememberMe.persistentToken.domainClassName = 'folksonomy.PersistentToken'
+
+grails.plugins.springsecurity.openid.domainClass = 'folksonomy.OpenID'
