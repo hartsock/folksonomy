@@ -1,4 +1,7 @@
-package folksonomy;
+package folksonomy
+
+import folksonomy.parsers.FastDeliciousHtmlParser
+import java.text.NumberFormat;
 
 /**
  * Open Software Integrators, LLC <p/>
@@ -10,6 +13,7 @@ package folksonomy;
  * @author Shawn Hartsock
  */
 public class DeliciousHtmlParserTest extends GroovyTestCase {
+    def formatter = NumberFormat.getInstance()
     DeliciousHtmlParser deliciousHtmlParser
 
     protected void setUp() {
@@ -21,11 +25,43 @@ public class DeliciousHtmlParserTest extends GroovyTestCase {
         super.tearDown()
     }
 
-    void testParserOnExport() {
+    void testParserSpeedNormal() {
+        def parser = new DeliciousHtmlParser()
         def sample = getClass().getResourceAsStream("delicious.html")
         assert sample != null
-        def links = deliciousHtmlParser.parse(sample)
-        println links
+        def endTime;
+        def startTime = System.nanoTime();
+        def links = parser.parse(sample)
+        endTime = System.nanoTime()
+        println "Elapsed time = " + formatter.format(endTime - startTime)
+        assert links
+        assert links.size() > 0
+        assert links.size() == 457
+    }
+
+    void testParserSpeedFast() {
+        def parser = new DeliciousHtmlParser()
+        def sample = getClass().getResourceAsStream("delicious.html")
+        assert sample != null
+        def endTime;
+        def startTime = System.nanoTime();
+        def links = parser.parseFast(sample)
+        endTime = System.nanoTime()
+        println "Elapsed time = " + formatter.format(endTime - startTime)
+        assert links
+        assert links.size() > 0
+        assert links.size() == 457
+    }
+
+    void testParserSpeedJava() {
+        def parser = new FastDeliciousHtmlParser()
+        def sample = getClass().getResourceAsStream("delicious.html")
+        assert sample != null
+        def endTime;
+        def startTime = System.nanoTime();
+        def links = parser.parse(sample)
+        endTime = System.nanoTime()
+        println "Elapsed time = " + formatter.format(endTime - startTime)
         assert links
         assert links.size() > 0
         assert links.size() == 457

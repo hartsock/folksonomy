@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="osil005" id="0" name="DeliciousHtmlParserTest" package="folksonomy" tests="1" time="26.986" timestamp="2011-10-23T18:51:41">
+  <testsuite errors="0" failures="0" hostname="osil005" id="0" name="DeliciousHtmlParserTest" package="folksonomy" tests="3" time="1.279" timestamp="2011-10-23T20:51:08">
       <properties />
 
-      <testcase classname="folksonomy.DeliciousHtmlParserTest" name="testParserOnExport" time="26.964" />
+      <testcase classname="folksonomy.DeliciousHtmlParserTest" name="testParserSpeedNormal" time="0.883" />
+
+      <testcase classname="folksonomy.DeliciousHtmlParserTest" name="testParserSpeedFast" time="0.201" />
+
+      <testcase classname="folksonomy.DeliciousHtmlParserTest" name="testParserSpeedJava" time="0.158" />
 
       <system-out />
 
-      <system-err><![CDATA[--Output from testParserOnExport--
+      <system-err><![CDATA[--Output from testParserSpeedNormal--
+--Output from testParserSpeedFast--
+--Output from testParserSpeedJava--
 ]]></system-err>
 
   </testsuite>
