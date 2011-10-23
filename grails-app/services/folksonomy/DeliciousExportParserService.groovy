@@ -1,0 +1,4 @@
+package folksonomy
+
+class DeliciousExportParserService {
+}
