@@ -39,13 +39,27 @@ public class DeliciousHtmlParserTest extends GroovyTestCase {
         assert links.size() == 457
     }
 
-    void testParserSpeedFast() {
+    void testParserSpeedFaster() {
         def parser = new DeliciousHtmlParser()
         def sample = getClass().getResourceAsStream("delicious.html")
         assert sample != null
         def endTime;
         def startTime = System.nanoTime();
-        def links = parser.parseFast(sample)
+        def links = parser.parseFaster(sample)
+        endTime = System.nanoTime()
+        println "Elapsed time = " + formatter.format(endTime - startTime)
+        assert links
+        assert links.size() > 0
+        assert links.size() == 457
+    }
+
+    void testParserSpeedFastest() {
+        def parser = new DeliciousHtmlParser()
+        def sample = getClass().getResourceAsStream("delicious.html")
+        assert sample != null
+        def endTime;
+        def startTime = System.nanoTime();
+        def links = parser.parseFastest(sample)
         endTime = System.nanoTime()
         println "Elapsed time = " + formatter.format(endTime - startTime)
         assert links

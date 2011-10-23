@@ -32,7 +32,24 @@ class DeliciousHtmlParser {
         return links
     }
 
-    List<TaggedLink> parseFast(InputStream input)  {
+    List<TaggedLink> parseFaster(InputStream input)  {
+        final List<TaggedLink> links = new LinkedList<TaggedLink>()
+        final GPathResult nodes = xmlSlurper.parse(input);
+        final Iterator iter = nodes.depthFirst();
+        for(NodeChild node : iter) {
+            if("a" == node.name().toLowerCase()) {
+                String title = node.text()
+                Map attributes = node.attributes()
+                final String href = attributes['href']
+                final String tags = attributes['tags']
+                TaggedLink tl = new TaggedLink(title,href,tags.split(/,/));
+                links.add(tl)
+            }
+        }
+        return links
+    }
+
+    List<TaggedLink> parseFastest(InputStream input)  {
         final List<TaggedLink> links = new LinkedList<TaggedLink>()
         final GPathResult nodes = xmlSlurper.parse(input);
         final Iterator iter = nodes.depthFirst();
