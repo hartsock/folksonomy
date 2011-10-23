@@ -8,10 +8,7 @@ import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Open Software Integrators, LLC <p/>
@@ -27,7 +24,7 @@ import java.util.Map;
 public class FastDeliciousHtmlParser {
     private final XmlSlurper parser = new XmlSlurper(new Parser());
 
-    public List<TaggedLink> parse(final InputStream inputStream) throws IOException, SAXException {
+    public Collection<TaggedLink> parse(final InputStream inputStream) throws IOException, SAXException {
         final List<TaggedLink> taggedLinks = new LinkedList<TaggedLink>();
         final GPathResult nodes = parser.parse(inputStream);
         final Iterator iter = nodes.depthFirst();

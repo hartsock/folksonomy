@@ -25,7 +25,7 @@ public class DeliciousHtmlParserTest extends GroovyTestCase {
         super.tearDown()
     }
 
-    void testParserSpeedNormal() {
+    void testGrooviest() {
         def parser = new DeliciousHtmlParser()
         def sample = getClass().getResourceAsStream("delicious.html")
         assert sample != null
@@ -45,7 +45,7 @@ public class DeliciousHtmlParserTest extends GroovyTestCase {
         assert sample != null
         def endTime;
         def startTime = System.nanoTime();
-        def links = parser.parseFaster(sample)
+        def links = parser.parseFast(sample)
         endTime = System.nanoTime()
         println "Elapsed time = " + formatter.format(endTime - startTime)
         assert links
@@ -59,7 +59,7 @@ public class DeliciousHtmlParserTest extends GroovyTestCase {
         assert sample != null
         def endTime;
         def startTime = System.nanoTime();
-        def links = parser.parseFastest(sample)
+        def links = parser.parseFaster(sample)
         endTime = System.nanoTime()
         println "Elapsed time = " + formatter.format(endTime - startTime)
         assert links

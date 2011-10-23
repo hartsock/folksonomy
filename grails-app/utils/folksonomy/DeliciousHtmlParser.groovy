@@ -18,38 +18,38 @@ import groovy.util.slurpersupport.GPathResult;
 class DeliciousHtmlParser {
     def xmlSlurper = new XmlSlurper(new Parser())
 
-    def parse(InputStream input) {
-        def records = xmlSlurper.parse(input)
-        def dlinks = records.depthFirst().grep { "A".equalsIgnoreCase(it.name()) }
+    def parse(input) {
         def links = []
-        dlinks.each { l ->
-            def link = [:]
-            link.title = l.text()
-            link.href = l.@href?.text()
-            link.tags = l.@tags?.text()?.split(/,/)?:[]
-            links.add(link)
+        xmlSlurper.parse(input).depthFirst().grep {
+            "A".equalsIgnoreCase(it.name())
+        } .each { l ->
+            links.add([:].with {
+                title = l.text()
+                href = l.@href?.text()
+                tags = l.@tags?.text()?.split(/,/)?:[]
+            })
         }
         return links
     }
 
-    List<TaggedLink> parseFaster(InputStream input)  {
-        final List<TaggedLink> links = new LinkedList<TaggedLink>()
-        final GPathResult nodes = xmlSlurper.parse(input);
-        final Iterator iter = nodes.depthFirst();
-        for(NodeChild node : iter) {
+    Collection<TaggedLink> parseFast(InputStream input)  {
+        Collection<TaggedLink> links = []
+        def nodes = xmlSlurper.parse(input);
+        def allNodes = nodes.depthFirst();
+        for(NodeChild node : allNodes) {
             if("a" == node.name().toLowerCase()) {
-                String title = node.text()
-                Map attributes = node.attributes()
-                final String href = attributes['href']
-                final String tags = attributes['tags']
-                TaggedLink tl = new TaggedLink(title,href,tags.split(/,/));
+                def title = node.text()
+                def attributes = node.attributes()
+                def href = attributes['href']
+                def tags = attributes['tags']
+                def tl = new TaggedLink(title,href,tags.split(/,/));
                 links.add(tl)
             }
         }
         return links
     }
 
-    List<TaggedLink> parseFastest(InputStream input)  {
+    Collection<TaggedLink> parseFaster(InputStream input)  {
         final List<TaggedLink> links = new LinkedList<TaggedLink>()
         final GPathResult nodes = xmlSlurper.parse(input);
         final Iterator iter = nodes.depthFirst();
