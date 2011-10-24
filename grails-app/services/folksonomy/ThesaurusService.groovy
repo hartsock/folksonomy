@@ -24,10 +24,19 @@ class ThesaurusService implements InitializingBean {
         wordList(word,remoteCall)
     }
 
-    def remoteCall = { word -> "${remoteServiceUri}/${apiKey}/${word}/xml"?.toURL()?.text }
+    def remoteCall = { word ->
+        "${remoteServiceUri}/${apiKey}/${word}/xml"?.toURL()?.text
+    }
 
     def wordList(word,Closure remoteLogic) {
-        return parseResponse( remoteLogic.call(word.toString().replaceAll(/\s/,"%20")) )
+        def list = []
+        try {
+            list = parseResponse( remoteLogic.call(word.toString().replaceAll(/\s/,"%20")) )
+            // TODO: don't do this exception swallow nastiness here...
+        } catch(Throwable t) {
+            t.printStackTrace()
+        }
+        list
     }
 
     def parseResponse(String response) {
