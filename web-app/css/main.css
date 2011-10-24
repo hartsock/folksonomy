@@ -72,25 +72,31 @@ input:focus, select:focus, textarea:focus {
     padding: 7px 12px;
 }
 
-.menuButton {
+.nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.menuButton, .nav ul li {
     font-size: 10px;
     padding: 0 5px;
 }
-.menuButton a {
+.menuButton a, .nav ul li a {
     color: #333;
-    padding: 4px 6px;
+    padding: 4px 6px 4px 20px;
 }
-.menuButton a.home {
+.menuButton a.home, .home {
     background: url(../images/skin/house.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
-.menuButton a.list {
+.menuButton a.list, .list {
     background: url(../images/skin/database_table.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
-.menuButton a.create {
+.menuButton a.create, .create {
     background: url(../images/skin/database_add.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
@@ -196,7 +202,7 @@ th.desc a {
 
 /* PAGINATION */
 
-.paginateButtons {
+.paginateButtons, .pagination {
     background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
     border: 1px solid #ccc;
     border-top: 0;
@@ -205,7 +211,7 @@ th.desc a {
     overflow: hidden;
     padding: 10px 3px;
 }
-.paginateButtons a {
+.paginateButtons a, .pagination a.step {
     background: #fff;
     border: 1px solid #ccc;
     border-color: #ccc #aaa #aaa #ccc;
@@ -213,7 +219,7 @@ th.desc a {
     margin: 0 3px;
     padding: 2px 6px;
 }
-.paginateButtons span {
+.paginateButtons span, .pagination .currentStep {
     padding: 2px 3px;
 }
 
@@ -226,16 +232,34 @@ th.desc a {
 .prop {
     padding: 5px;
 }
-.prop .name {
+.prop .name, .property-label {
     text-align: left;
     width: 15%;
     white-space: nowrap;
 }
-.prop .value {
+.prop .value, .property-value {
     text-align: left;
     width: 85%;
 }
 
+.property-list {
+    padding: 0;
+    margin: 1em;
+}
+
+.property-list .fieldcontain {
+    list-style: none;
+}
+
+.property-list .fieldcontain .property-label, .fieldcontain label {
+    width: 15%;
+    float:left;
+}
+
+.property-list .fieldcontain .property-value {
+    width: 85%;
+    float:none;
+}
 /* ACTION BUTTONS */
 
 .buttons {
@@ -248,7 +272,7 @@ th.desc a {
     padding: 0;
 }
 
-.buttons input {
+.buttons input, .buttons a, .buttons div {
     background: #fff;
     border: 0;
     color: #333;
@@ -259,15 +283,19 @@ th.desc a {
     overflow: visible;
     padding: 2px 6px;
 }
-.buttons input.delete {
+.buttons input.delete, .buttons .delete {
     background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
-.buttons input.edit {
+.buttons input.edit, .buttons .edit {
     background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
-.buttons input.save {
+.buttons input.save, .buttons .save {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
+}
+
+.content {
+    margin: 1.25em;
 }

@@ -110,3 +110,6 @@ grails.plugins.springsecurity.rememberMe.persistent = true
 grails.plugins.springsecurity.rememberMe.persistentToken.domainClassName = 'folksonomy.PersistentToken'
 
 grails.plugins.springsecurity.openid.domainClass = 'folksonomy.OpenID'
+grails.plugins.springsecurity.interceptUrlMap = [
+   '/**':               ['ROLE_USER']
+                                   ]

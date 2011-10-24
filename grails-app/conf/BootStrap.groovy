@@ -14,7 +14,11 @@ class BootStrap {
             new Tag(name:'java').save()
         }
         if(Authority.count() == 0) {
-            // springSecurityService
+            new Authority(authority:'ROLE_USER').save()
+            new Authority(authority:'ROLE_ADMIN').save()
+        }
+        if(User.count() == 0) {
+            new User(username:'admin',password:'admin',enabled:true).save()
         }
     }
     def destroy = {
