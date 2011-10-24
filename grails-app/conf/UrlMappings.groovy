@@ -7,9 +7,8 @@ class UrlMappings {
 			}
 		}
 
-		"/" {
+		"/$action?/$id?" {
             controller = 'folksonomy'
-            action = 'index'
         }
         "500"(view:'/error')
 	}
