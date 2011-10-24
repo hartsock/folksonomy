@@ -4,6 +4,7 @@ import folksonomy.User
 import grails.plugins.springsecurity.SpringSecurityService
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import folksonomy.UserAuthority
 
 class BootStrap {
     SpringSecurityService springSecurityService
@@ -13,12 +14,15 @@ class BootStrap {
         if(Tag.count() == 0) {
             new Tag(name:'java').save()
         }
-        if(Authority.count() == 0) {
-            new Authority(authority:'ROLE_USER').save()
-            new Authority(authority:'ROLE_ADMIN').save()
-        }
         if(User.count() == 0) {
-            new User(username:'admin',password:'admin',enabled:true).save()
+            def admin = new User(username:'admin',password:'admin',enabled:true)
+            admin.save()
+            def roleUser = new Authority(authority:'ROLE_USER')
+            roleUser.save()
+            def roleAdmin = new Authority(authority:'ROLE_ADMIN')
+            roleAdmin.save()
+            new UserAuthority(user:admin,authority: roleUser).save()
+            new UserAuthority(user:admin,authority: roleAdmin).save()
         }
     }
     def destroy = {

@@ -18,16 +18,16 @@ import groovy.util.slurpersupport.GPathResult;
 class DeliciousHtmlParser {
     def xmlSlurper = new XmlSlurper(new Parser())
 
-    def parse(input) {
+    def parse = {input ->
         def links = []
         xmlSlurper.parse(input).depthFirst().grep {
             "A".equalsIgnoreCase(it.name())
-        } .each { l ->
-            links.add([:].with {
-                title = l.text()
-                href = l.@href?.text()
-                tags = l.@tags?.text()?.split(/,/)?:[]
-            })
+        }.each { l ->
+            links.add([
+                    title: l.text(),
+                    href: l.@href?.text(),
+                    tags: l.@tags?.text()?.split(/,/) ?: [],
+            ])
         }
         return links
     }

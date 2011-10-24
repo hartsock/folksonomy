@@ -1,7 +1,5 @@
 package folksonomy.dto
 
-import folksonomy.Uri
-import folksonomy.Tag
 /**
  * Open Software Integrators, LLC <p/>
  * The Professional Service Delivery Experts </p>
@@ -10,8 +8,13 @@ import folksonomy.Tag
  * <p/>
  * @author Shawn Hartsock
  */
-class UserUriTags {
+class UserUriTagsDTO {
     String username
-    Uri uri
-    Set<Tag> tags
+    String title
+    String description
+    URI uri
+    Set<String> tags = []
+    void addTag(tag) {
+        tags.add(tag.toString())
+    }
 }

@@ -16,7 +16,6 @@
         <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
         <li><g:link class="create" action="create"><g:message code="default.new.label"
                                                               args="[entityName]"/></g:link></li>
-        <li><g:link class="list" action="upload">upload import</g:link></li>
     </ul>
 </div>
 
@@ -29,14 +28,14 @@
         <thead>
         <tr>
 
-            <g:sortableColumn property="title" title="${message(code: 'userUri.title.label', default: 'Title')}"/>
-
             <g:sortableColumn property="description"
                               title="${message(code: 'userUri.description.label', default: 'Description')}"/>
 
+            <g:sortableColumn property="title" title="${message(code: 'userUri.title.label', default: 'Title')}"/>
+
             <th><g:message code="userUri.uri.label" default="Uri"/></th>
 
-            <th>Tags</th>
+            <th><g:message code="userUri.user.label" default="User"/></th>
 
         </tr>
         </thead>
@@ -44,18 +43,14 @@
         <g:each in="${userUriInstanceList}" status="i" var="userUriInstance">
             <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-                <td><g:link controller="userUri" action="show"
-                            id="${userUriInstance.id}">${fieldValue(bean: userUriInstance, field: "title")}</g:link></td>
+                <td><g:link action="show"
+                            id="${userUriInstance.id}">${fieldValue(bean: userUriInstance, field: "description")}</g:link></td>
 
+                <td>${fieldValue(bean: userUriInstance, field: "title")}</td>
 
-                <td>${fieldValue(bean: userUriInstance, field: "description")}</td>
+                <td>${fieldValue(bean: userUriInstance, field: "uri")}</td>
 
-
-                <td>
-                    <a href="${fieldValue(bean: userUriInstance, field: "uri")}">${fieldValue(bean: userUriInstance, field: "uri")}</a>
-                </td>
-
-                <td>${fieldValue(bean: userUriInstance, field: "tags")}</td>
+                <td>${fieldValue(bean: userUriInstance, field: "user")}</td>
 
             </tr>
         </g:each>

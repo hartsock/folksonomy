@@ -10,10 +10,10 @@ class SemanticScanJob {
     def execute() {
         Tag.withTransaction { status ->
             Tag tag = Tag.findByChecked(false)
-            tag.discard() // throw away so we can lock it later
-            // Obtain a pessimistic lock on this object or give up
-            tag = Tag.lock(tag.id)
+            tag?.discard() // throw away so we can lock it later
             if(tag) {
+                // Obtain a pessimistic lock on this object or give up
+                tag = Tag.lock(tag.id)
                 semanticService.categorize(tag)
                 tag.setChecked(true)
                 if(!tag.save()) {

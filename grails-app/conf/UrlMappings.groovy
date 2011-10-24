@@ -7,7 +7,10 @@ class UrlMappings {
 			}
 		}
 
-		"/"(view:"/index")
-		"500"(view:'/error')
+		"/" {
+            controller = 'folksonomy'
+            action = 'index'
+        }
+        "500"(view:'/error')
 	}
 }

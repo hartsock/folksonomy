@@ -21,10 +21,22 @@ class ImportParserService {
             java: { input -> fastParser.parse(input) }
     ]
 
+    TaggingService taggingService
+
     def parserTypes() { parsers.keySet() }
 
     def parse(String type, InputStream inputStream) {
         assert parsers.keySet().contains(type)
-        parsers[type]?.call(inputStream)
+        Closure closure = parsers[type]
+        closure.call(inputStream)
+    }
+
+    def processImport(User user, String type, InputStream inputStream) {
+        def count = 0
+        parse(type,inputStream).each { bookmark ->
+            taggingService.tagUriString(user,bookmark.title,bookmark.href,bookmark.tags?.toList())
+            count++
+        }
+        return count
     }
 }
