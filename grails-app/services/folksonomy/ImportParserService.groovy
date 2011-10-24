@@ -1,8 +1,17 @@
 package folksonomy
 
 import folksonomy.parsers.FastDeliciousHtmlParser
+/**
+ * Dynamically switches between our four versions of the
+ * parser for the purpose of showing performance differences
+ * in demo.
+ * <p/>
+ * @author Shawn Hartsock
+ */
+class ImportParserService {
+    static transactional = false
+    static expose = ['jmx']
 
-class DeliciousExportParserService {
     def htmlParser = new DeliciousHtmlParser()
     def fastParser = new FastDeliciousHtmlParser()
     def parsers = [

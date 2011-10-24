@@ -5,6 +5,8 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
 
 class ThesaurusService implements InitializingBean {
     static transactional = true
+    static expose = ['jmx']
+
     String remoteServiceUri
     String apiKey
 

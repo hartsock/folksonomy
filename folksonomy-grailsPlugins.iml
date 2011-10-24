@@ -12,6 +12,10 @@
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -36,6 +40,17 @@
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/target/classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-2.0.0.M1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/grails-app/controllers" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jmx-0.7">
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jmx-0.7/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jmx-0.7/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jmx-0.7/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-1.6.1.1/src/groovy" isTestSource="false" />
@@ -78,6 +93,14 @@
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/grails-app/controllers" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/src/java" isTestSource="false" />

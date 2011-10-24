@@ -5,6 +5,7 @@ import folksonomy.dto.UserUriTags
 class TaggingService {
 
     static transactional = false // we will manually control our transactions
+     static expose = ['jmx']
 
     def fetchTags(tags) {
 

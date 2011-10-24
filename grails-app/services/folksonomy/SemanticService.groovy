@@ -4,6 +4,8 @@ import grails.orm.HibernateCriteriaBuilder
 
 class SemanticService {
     static transactional = true
+    static expose = ['jmx']
+
     def sessionFactory
     def thesaurusService
 
