@@ -3,3 +3,6 @@
 *.jar
 *.zip
 *.log
+*.war
+target
+out
