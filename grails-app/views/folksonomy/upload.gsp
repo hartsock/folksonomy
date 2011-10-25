@@ -1,4 +1,3 @@
-<%@ page import="folksonomy.UriTag" %>
 <!doctype html>
 <html>
 	<head>

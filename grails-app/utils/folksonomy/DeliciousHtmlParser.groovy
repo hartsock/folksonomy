@@ -55,7 +55,12 @@ class DeliciousHtmlParser {
         final Iterator iter = nodes.depthFirst();
         for(NodeChild node : iter) {
             if("a".equalsIgnoreCase(node.name())) {
-                TaggedLink tl = tagNode(node);
+                final String title = node.text();
+                final Map attributes = node.attributes();
+                final String href = (String) attributes.get("href");
+                final String tagsString = (String) attributes.get("tags");
+                final String[] tags = tagsString.split(",");
+                TaggedLink tl = new TaggedLink(title,href,tags);
                 links.add(tl)
             }
         }
@@ -63,12 +68,6 @@ class DeliciousHtmlParser {
     }
 
     TaggedLink tagNode(final NodeChild node) {
-        final String title = node.text();
-        Map attributes = node.attributes();
-        final String href = (String) attributes.get("href");
-        final String tagsString = (String) attributes.get("tags");
-        final String[] tags = tagsString.split(",");
-        return new TaggedLink(title,href,tags);
     }
 
 }

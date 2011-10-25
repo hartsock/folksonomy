@@ -9,15 +9,6 @@ class SemanticService {
     def sessionFactory
     def thesaurusService
 
-    void scan() {
-        def tag = Tag.findByChecked(false)
-        if(tag) {
-            categorize(tag)
-            tag.setChecked(true)
-            if(!tag.save()) { throw new IllegalStateException("${tag.errors}") }
-        }
-    }
-
     void categorize(Tag tag) {
         def words = thesaurusService.wordList(tag)
         categorize(tag,words)
@@ -34,10 +25,10 @@ class SemanticService {
         def tag = lookupTag(tagName)
         switch(relationship) {
             case 'antonym':
-                new Antonym(root:root,tag:tag).save()
+                new Antonym(root:root,tag:tag).save(flush:true)
                 break
             case 'synonym':
-                new Synonym(root:root,tag:tag).save()
+                new Synonym(root:root,tag:tag).save(flush:true)
                 break
         }
     }
@@ -46,13 +37,20 @@ class SemanticService {
         def tag = lookupTag(tagName)
         def category = lookupCategory(categoryName)
         def association = new CategoryTag(category:category,tag:tag)
-        if ( !association.save() ) {
+        if ( !association.save(flush:true) ) {
             throw new IllegalStateException("${association.errors}")
         }
     }
 
     Tag lookupTag(word) {
-        lookupDomain(word,Tag)
+        Tag tag = Tag.findByName(word)
+        if(!tag) {
+            tag = new Tag(name:word)
+            tag.save(flush:true)
+        }
+        // tag.discard()
+        // tag = Tag.lock(tag.id)
+        return tag
     }
 
     Category lookupCategory(word) {
@@ -62,9 +60,9 @@ class SemanticService {
     def lookupDomain(word, clazz) {
         def obj = searchForDomain(clazz,word)
         if( !obj ) {
-            obj = clazz.newInstance(name:word)
-            if(!obj.save()) {
-                throw new IllegalStateException("${obj.errors}")
+            Tag.withTransaction {
+                obj = clazz.newInstance(name:word)
+                obj.save(flush:true)
             }
         }
         return obj

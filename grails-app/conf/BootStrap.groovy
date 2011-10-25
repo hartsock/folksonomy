@@ -24,6 +24,7 @@ class BootStrap {
             new UserAuthority(user:admin,authority: roleUser).save()
             new UserAuthority(user:admin,authority: roleAdmin).save()
         }
+        println "System ready"
     }
     def destroy = {
     }

@@ -64,7 +64,7 @@ thesaurusService.apiKey="${System.getProperty('thesaurusService.apiKey')}"
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
-        grails.serverURL = "http://www.changeme.com"
+        grails.serverURL = "${System.getProperty("grails.serverURL")}"
     }
     development {
         grails.serverURL = "http://localhost:8080/${appName}"
