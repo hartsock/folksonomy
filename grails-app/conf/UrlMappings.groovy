@@ -6,7 +6,10 @@ class UrlMappings {
 				// apply constraints here
 			}
 		}
-
+        "/tag/$tagName?" {
+            controller = 'folksonomy'
+            action = 'tag'
+        }
 		"/$action?/$id?" {
             controller = 'folksonomy'
         }

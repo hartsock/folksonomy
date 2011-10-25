@@ -27,6 +27,7 @@
 			</ul>
 			</g:hasErrors>
 			<g:form action="process" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="profiler" value="true"/>
 				<fieldset class="form">
                     <div class="fieldcontain ${hasErrors(bean: uriTagInstance, field: 'tag', 'error')} required">
                         <label for="export">

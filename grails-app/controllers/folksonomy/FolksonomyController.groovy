@@ -1,7 +1,6 @@
 package folksonomy
 
 import org.springframework.web.multipart.MultipartFile
-import java.security.Principal
 import grails.plugins.springsecurity.Secured
 import org.codehaus.groovy.grails.plugins.springsecurity.GrailsUser
 
@@ -11,6 +10,7 @@ class FolksonomyController {
 
     def springSecurityService
     def importParserService
+    def profilerLog
 
     def index = {
         redirect(action:'list')
@@ -38,20 +38,41 @@ class FolksonomyController {
 
     @Secured(['ROLE_USER'])
     def process = {
+        profilerLog.startProfiling("processingUpload")
+        def startTime = System.nanoTime();
         GrailsUser principal = springSecurityService.principal
         def username = principal.username
         def user = username?User.findByUsername(username):null
         assert user != null
         String type = params.type?:'groovy'
         MultipartFile f = request.getFile('export')
+        String view = 'list'
         if(!f.empty) {
             def count = importParserService.processImport(user, type, f.inputStream)
             flash.message = "processed ${count} bookmarks"
-            redirect(view:'list')
         }
         else {
             flash.message = "please specify a file"
-            redirect(view:'upload')
+            view = 'upload'
         }
+        def endTime = System.nanoTime();
+        profilerLog.stopProfiling()
+        log.info("processing time: ${endTime - startTime}")
+        redirect(view:view)
+    }
+
+    @Secured(['ROLE_USER'])
+    def tag = {
+        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        GrailsUser principal = springSecurityService.principal
+        def username = principal.username
+        def user = username?User.findByUsername(username):null
+        assert user != null
+        def list = UserUri.findAll(
+                "from UserUri as userUri join userUri.tags as tags where :id in tags ",
+                [id:params.id],
+                params)
+
+        [userUriInstanceList: list, userUriInstanceTotal: UserUri.countByUser(user)]
     }
 }

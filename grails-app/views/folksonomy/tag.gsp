@@ -56,8 +56,8 @@
                 </td>
 
                 <td>
-                    <g:each var="tag" in="${userUriInstance?.tags?:[]}">
-                        <g:link action="tag" params="${[tag:tag]}">${tag}</g:link>
+                    <g:each in="${fieldValue(bean: userUriInstance, field: "tags")}" var="tag">
+                        <g:link action="tag" id="${tag}">${tag}</g:link>
                     </g:each>
                 </td>
 

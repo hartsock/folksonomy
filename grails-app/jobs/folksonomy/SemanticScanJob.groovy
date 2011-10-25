@@ -12,7 +12,6 @@ class SemanticScanJob {
             Tag tag = Tag.findByChecked(false)
             tag?.discard() // throw away so we can lock it later
             if(tag) {
-                // Obtain a pessimistic lock on this object or give up
                 tag = Tag.lock(tag.id)
                 semanticService.categorize(tag)
                 tag.setChecked(true)
