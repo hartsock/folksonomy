@@ -57,7 +57,7 @@
 
                 <td>
                     <g:each in="${userUriInstance?.tags?:[]}" status="j" var="tag">
-                        ${tag}
+                        <g:link controller="tag" action="show" id="${tag.id}">${tag}</g:link>
                     </g:each>
                 </td>
 

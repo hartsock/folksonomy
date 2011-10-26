@@ -1,4 +1,4 @@
-<%@ page import="folksonomy.Tag" %>
+<%@ page import="folksonomy.CategoryTag; folksonomy.Antonym; folksonomy.Synonym; folksonomy.Tag" %>
 <!doctype html>
 <html>
 <head>
@@ -47,11 +47,17 @@
 
             </li>
         </g:if>
-
+        <li class="fieldcontain">
+        Category:
+        <g:each in="${CategoryTag.findAllByTag(tagInstance)}" var="categoryTag">
+            <g:link controller="category" action="show" id="${categoryTag.category.id}">${categoryTag.category}</g:link>
+        </g:each>
+        </li>
     </ol>
     <g:form>
         <fieldset class="buttons">
             <g:hiddenField name="id" value="${tagInstance?.id}"/>
+            <g:link class="list" action="categorize" id="${tagInstance?.id}">Categorize</g:link>
             <g:link class="edit" action="edit" id="${tagInstance?.id}"><g:message code="default.button.edit.label"
                                                                                   default="Edit"/></g:link>
             <g:actionSubmit class="delete" action="delete"

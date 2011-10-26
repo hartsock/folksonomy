@@ -6,7 +6,7 @@ class UrlMappings {
 				// apply constraints here
 			}
 		}
-        "/tag/$action?/$id?" {
+        "/tags/$action?/$id?" {
             controller = 'folksonomy'
         }
 		"/" (controller:'folksonomy',action:'list')

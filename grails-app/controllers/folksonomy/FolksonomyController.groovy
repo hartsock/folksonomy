@@ -58,7 +58,7 @@ class FolksonomyController {
         def endTime = System.nanoTime();
         profilerLog.stopProfiling()
         log.info("processing time: ${endTime - startTime}")
-        redirect(view:view)
+        render(view:'list',model:[userUriInstanceList: UserUri.findAllByUser(user,params), userUriInstanceTotal: UserUri.countByUser(user)])
     }
 
     @Secured(['ROLE_USER'])

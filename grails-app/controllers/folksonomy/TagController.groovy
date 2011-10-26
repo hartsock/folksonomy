@@ -6,6 +6,8 @@ class TagController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+    def semanticService
+
     def index() {
         redirect(action: "list", params: params)
     }
@@ -39,6 +41,17 @@ class TagController {
         }
 
         [tagInstance: tagInstance]
+    }
+
+    def categorize() {
+        def tagInstance = Tag.get(params.id)
+        if (!tagInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'tag.label', default: 'Tag'), params.id])
+            redirect(action: "list")
+            return
+        }
+        semanticService.categorize(tagInstance)
+        render(view:'show',model:[tagInstance:tagInstance])
     }
 
     def edit() {
