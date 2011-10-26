@@ -46,10 +46,10 @@ class SemanticService {
         Tag tag = Tag.findByName(word)
         if(!tag) {
             tag = new Tag(name:word)
-            tag.save(flush:true)
+            if(! tag.save(flush:true) ) {
+                log.error(tag.errors)
+            }
         }
-        // tag.discard()
-        // tag = Tag.lock(tag.id)
         return tag
     }
 
