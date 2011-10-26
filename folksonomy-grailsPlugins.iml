@@ -11,8 +11,6 @@
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/famfamfam-1.0.1/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-ui-0.1.2/grails-app/views" relative="/" />
-          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/web-app" relative="/" />
-          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/grails-app/views" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/jquery-ui-1.8.15/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/hibernate-stats-1.1/grails-app/views" relative="/" />
@@ -86,22 +84,6 @@
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/profiler-0.3/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2">
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/grails-app/services" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/web-app/plugins" />
-    </content>
-    <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1">
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/grails-app/controllers" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-monitor-0.1/web-app/plugins" />
-    </content>
     <content url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/src/java" isTestSource="false" />
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/spring-security-core-1.2.4/src/groovy" isTestSource="false" />
@@ -167,14 +149,12 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/com.icegreen/greenmail/jars/greenmail-1.3.jar!/" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/lib" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/lib" />
-          <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/lib" />
           <root url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/greenmail-1.2.2/lib" recursive="false" />
         <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/perf4j-0.1.1/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/quartz-0.4.2/lib" recursive="false" />
         <jarDirectory url="file://$USER_HOME$/.grails/2.0.0.M1/projects/folksonomy/plugins/svn-1.0.0.M1/lib" recursive="false" />
       </library>
     </orderEntry>

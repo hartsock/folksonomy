@@ -9,6 +9,9 @@ class ThesaurusService implements InitializingBean {
 
     String remoteServiceUri
     String apiKey
+    def count = 0
+    def timer
+    List exceptions = []
 
     void afterPropertiesSet() {
         remoteServiceUri = CH.config.thesaurusService.remoteServiceUri
@@ -25,16 +28,22 @@ class ThesaurusService implements InitializingBean {
     }
 
     def remoteCall = { word ->
+        count++
         "${remoteServiceUri}/${apiKey}/${word}/xml"?.toURL()?.text
     }
 
     def wordList(word,Closure remoteLogic) {
+        def start = System.nanoTime()
         def list = []
         try {
             list = parseResponse( remoteLogic.call(word.toString().replaceAll(/\s/,"%20")) )
             // TODO: don't do this exception swallow nastiness here...
         } catch(Throwable t) {
             t.printStackTrace()
+            exceptions.add(t)
+        }
+        synchronized(timer) {
+            this.timer = System.nanoTime() - start
         }
         list
     }
