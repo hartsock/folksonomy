@@ -19,7 +19,7 @@ class DeliciousHtmlParser {
     def xmlSlurper = new XmlSlurper(new Parser())
 
     def parse = {input ->
-        def links = xmlSlurper.parse(input).depthFirst().grep {
+        xmlSlurper.parse(input).depthFirst().grep {
             "A".equalsIgnoreCase(it.name())
         }.collect { l ->
             [
@@ -28,7 +28,6 @@ class DeliciousHtmlParser {
                     tags: l.@tags?.text()?.split(/,/) ?: [],
             ]
         }
-        return links
     }
 
     Collection<TaggedLink> parseFast(InputStream input)  {
